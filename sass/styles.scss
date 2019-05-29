@@ -62,24 +62,25 @@ a{
     text-decoration:  none; 
     color: inherit;
 }*/
-
-//@import "compass/css3";
-
-//@include font-face(josephin, fonts/josephin, bold, italic);
 /*
+@import "compass/css3";
+
+@include font-face(josephin, fonts/josephin, bold, italic);
+*/
 @font-face {
-  font-family: josephin;
-  src: url('fonts/josephin/josephin-webfont.woff2') format('woff2'),
-       url('fonts/josephin/josephin-webfont.woff') format('woff'),
-       url('fonts/josephin/josephin-webfont.ttf') format('truetype'),
-       url('fonts/josephin/josephin-webfont.svg#josephinregular') format('svg');
+  font-family: 'josephin';
+  src: url('../fonts/josephin/josephin-webfont.eot?');
+  src: url('../fonts/josephin/josephin-webfont.otf') format('truetype'),       
+       url('../fonts/josephin/josephin-webfont.woff') format('woff'),
+       url('../fonts/josephin/josephin-webfont.woff2') format('woff2'),
+       url('../fonts/josephin/josephin-webfont.svg#josephin') format('svg');
   font-weight: normal;
   font-style: normal;
 
 }
-*/
+
 .header__logo { 
-    font-family: josephin, Roboto, Arial, sans-serif;
+    font-family: josephin, Arial, sans-serif;
     text-transform: uppercase;
     background: -webkit-gradient(linear, left top, left bottom, from(rgb(255, 255, 255)), to(rgb(0, 0, 0)));
     -webkit-background-clip: text;
@@ -241,9 +242,11 @@ button:hover::before {
         padding: 23px 40px;
         font-weight: bold;
         border-right: 2px solid orangered;
-        border-left: 2px solid orangered;      
-        transition: all 0.5s ease-in;  
-              
+        border-left: 2px solid orangered;    
+        transition: all 0.5s ease-in;            
+    }
+    :target {
+        color: orangered;
     }
 }
 
@@ -276,6 +279,7 @@ $menu-width:250px!default;
         padding-top: 0;
         /*permettre le scroll sur page principale*/
         overflow-y: scroll;
+        /*Pour ne pas que la page puisse se "lancer"*/
         -webkit-overflow-scrolling: touch;
         -moz-overflow-scrolling: touch;
         -o-overflow-scrolling: touch;
@@ -335,6 +339,7 @@ $menu-width:250px!default;
                 top: 0;
                 left: 0;
                 right: 0;
+               
             }
         }  
 
@@ -849,16 +854,17 @@ fieldset {
 
 
 .legend {
+    font-family: josephin, sans-serif;
     color:white;
     background: -webkit-gradient(linear, left top, left bottom, from(rgb(255, 255, 255)), to(rgb(0, 0, 0)));
+
     /*POUR METTRE LE BG SUR LE TEXT */
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -o-background-clip: text;
     -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    -o-text-fill-color: transparent;
-    font-family: josephin, Arial, Helvetica, sans-serif;
+    //-moz-text-fill-color: transparent;
+    //-o-text-fill-color: transparent;
     font-size: 40px;
     letter-spacing: 3px;
     text-transform:  uppercase;
@@ -866,7 +872,7 @@ fieldset {
     padding: 0.5em 1em;
     border: 2px solid orangered;
     // effet néon sur TS
-    text-shadow:0 0 20px rgba(255, 255, 255, 0.877),2px 3px 3px #000000, 0 0 100px rgba(255, 255, 255, 0.788);
+    text-shadow:0 0 20px rgb(255, 255, 255),2px 3px 3px #000000, 0 0 100px rgb(255, 255, 255);
     color:rgb(255, 255, 255);
     background-color:#000000;
 
@@ -962,20 +968,18 @@ fieldset {
   
 }
 .bloc1 img {
-  /* La transition s'applique à la fois sur la largeur et la hauteur, avec une durée d'une seconde. */
-  -webkit-transition: all 1.5s ease; /* Safari et Chrome */
-  -moz-transition: all 1.5s ease; /* Firefox */
-  -ms-transition: all 1.5s ease; /* Internet Explorer 9 */
-  -o-transition: all 1.5s ease; /* Opera */
-  transition: all 1.5s ease;
+  /* transition sur largeur et hauteur */
+  -webkit-transition: all 1s ease; /* Safari et Chrome */
+  -moz-transition: all 1s ease; /* Firefox */
+  -o-transition: all 1s ease; /* Opera */
+  transition: all 1s ease;
   }
   .bloc1:hover img {
-  /* L'image est grossie de 25% */
-  -webkit-transform:scale(1.10); /* Safari et Chrome */
-  -moz-transform:scale(1.10); /* Firefox */
-  -ms-transform:scale(1.10); /* Internet Explorer 9 */
-  -o-transform:scale(1.10); /* Opera */
-  transform:scale(1.10);
+  /* Image zoom + 8% */
+  -webkit-transform:scale(1.08); /* Safari et Chrome */
+  -moz-transform:scale(1.08); /* Firefox */
+  -o-transform:scale(1.08); /* Opera */
+  transform:scale(1.08);
   }
 //  BLOC 2  //
 
@@ -998,21 +1002,19 @@ fieldset {
     
 }
 .bloc2 img {
-  /* La transition s'applique à la fois sur la largeur et la hauteur, avec une durée d'une seconde. */
-  -webkit-transition: all 1.5s ease; /* Safari et Chrome */
-  -moz-transition: all 1.5s ease; /* Firefox */
-  -ms-transition: all 1.5s ease; /* Internet Explorer 9 */
-  -o-transition: all 1.5s ease; /* Opera */
-  transition: all 1.5s ease;
-  }
+   /* transition sur largeur et hauteur */
+   -webkit-transition: all 1s ease; /* Safari et Chrome */
+   -moz-transition: all 1s ease; /* Firefox */
+   -o-transition: all 1s ease; /* Opera */
+   transition: all 1s ease;
+   }
   .bloc2:hover img {
-  /* L'image est grossie de 25% */
-  -webkit-transform:scale(1.10); /* Safari et Chrome */
-  -moz-transform:scale(1.10); /* Firefox */
-  -ms-transform:scale(1.10); /* Internet Explorer 9 */
-  -o-transform:scale(1.10); /* Opera */
-  transform:scale(1.10);
-  }
+    /* Image zoom + 8% */
+    -webkit-transform:scale(1.08); /* Safari et Chrome */
+    -moz-transform:scale(1.08); /* Firefox */
+    -o-transform:scale(1.08); /* Opera */
+    transform:scale(1.08);
+    }
 //  BLOC 3  //
 
 .bloc3 {  
@@ -1034,20 +1036,18 @@ fieldset {
 
 }
 .bloc3 img {
-  /* La transition s'applique à la fois sur la largeur et la hauteur, avec une durée d'une seconde. */
-  -webkit-transition: all 1.5s ease; /* Safari et Chrome */
-  -moz-transition: all 1.5s ease; /* Firefox */
-  -ms-transition: all 1.5s ease; /* Internet Explorer 9 */
-  -o-transition: all 1.5s ease; /* Opera */
-  transition: all 1.5s ease;
+   /* transition sur largeur et hauteur */
+  -webkit-transition: all 1s ease; /* Safari et Chrome */
+  -moz-transition: all 1s ease; /* Firefox */
+  -o-transition: all 1s ease; /* Opera */
+  transition: all 1s ease;
   }
   .bloc3:hover img {
-  /* L'image est grossie de 25% */
-  -webkit-transform:scale(1.10); /* Safari et Chrome */
-  -moz-transform:scale(1.10); /* Firefox */
-  -ms-transform:scale(1.10); /* Internet Explorer 9 */
-  -o-transform:scale(1.10); /* Opera */
-  transform:scale(1.10);
+   /* Image zoom + 8% */
+  -webkit-transform:scale(1.08); /* Safari et Chrome */
+  -moz-transform:scale(1.08); /* Firefox */
+  -o-transform:scale(1.08); /* Opera */
+  transform:scale(1.08);
   }
 /*FORMAT 15 POUCES*/
 @media screen and (max-width: 1440px) {
@@ -1134,7 +1134,7 @@ fieldset {
     position: relative;
     color: whitesmoke;
     width: 100%;
-    //height: 66px;  
+    //height: 76px;  
     padding-top: 20px;
     background-color: rgb(17, 16, 16);
     clear: both;
@@ -1186,25 +1186,15 @@ fieldset {
 }
 
 /*  NEWSLETTER  */
-#newsletter {
-    position: absolute;
-    display: inline-block;
-    margin-left: 2em;
-    width: 40%;
-
-}
-
-.mail {
-    width: 40%;
-    height: 2.5em;
-    border: 2px solid rgb(146, 0, 0);
-   
-}
 
 .bouton-mail {
-    width: 29%;
+    float:  left;
+    text-align:  center;
+    width: 10%;
+    line-height: 25px;
     color: white;
-    height: 2em;
+    height: 1.6em;
+    margin-left: 3%;
     background-color: rgba(0, 0, 0, 0.829);
     border: 1px solid orangered;
 
@@ -1237,8 +1227,9 @@ fieldset {
   width: 25%;
   font-size: 7px;
   height: 3.5em;
+  }
 }
-}
+
 // ==========================================================================
 //                -- BAND.PHP --
 // ==========================================================================
@@ -1246,7 +1237,7 @@ fieldset {
 #page-band {
     margin:0;
     max-width: 100%;
-    height: auto;
+    height: 90%;
     border: 2px solid rgba(255, 255, 255, 0.808);
 
 }
@@ -1326,7 +1317,7 @@ fieldset {
     position: fixed;
     width: 99.8%;
     height:92%; 
-    opacity: 0.6;
+    opacity: 0.9;
 
 }
 
@@ -1439,7 +1430,7 @@ ul#hover_block li img {
     justify-content:  center;
     margin-top: 10em; 
     margin: auto;
-    background-color: #00000069;
+    background-color: #00000060;
     box-shadow: 3px 3px 13px 13px rgba(255, 255, 255, 0.452);
 }
 
@@ -1451,13 +1442,13 @@ ul#hover_block li img {
     justify-content:  center;
     margin-top: 5em;
     margin: auto;
-    background-color: #00000069;
+    background-color: #00000060;
     box-shadow: 3px 3px 13px 13px rgba(255, 255, 255, 0.452);
 
 }
+
 @media screen and (max-width: 1440px) {
   .div-text1 {
-    
     height: 11.5em;
   }
   .div-text2 {
@@ -1497,8 +1488,7 @@ ul#hover_block li img {
 @media screen and (max-width: 414px) {
   .div-text1 {
     margin-top: 2em;
-    height: 26em;
-    
+    height: 26em; 
   }
   .div-text2 {
     height: 24em;
@@ -1513,6 +1503,8 @@ ul#hover_block li img {
     height: 26em;
   }
 }
+
+
 .text-p1 {
     position:  relative;
     color: white;
@@ -1521,8 +1513,7 @@ ul#hover_block li img {
     margin-right: 10%;
     margin-left: 10%;
     opacity: 0.9;
-   
-    
+     
 }
 
 .text-p2 {
@@ -1536,6 +1527,7 @@ ul#hover_block li img {
     opacity: 0.9;
 
 }
+
 @media screen and (max-width: 1440px) {
   .text-p1 {
     font-size:14px;
@@ -2236,15 +2228,6 @@ body {
 //                  PAGE -- SHOP.PHP --
 // ==========================================================================
 
-/*
-body {
-	font-family: Arial;
-	color: #8a6d6d;
-    font-size: 0.9em;
-    
-}
-*/
-
 
 #title-shop-content {  
    display:  flex;
@@ -2257,31 +2240,37 @@ body {
     color: white;
     margin: 50px 0;
     border-radius: 20px;
+    border: 1px solid rgb(43, 43, 43) ;
     background: #43516b;
     display: flex;
     justify-content:  center;
     width: 40%;
-    box-shadow: 6px 8px 10px rgba(70, 70, 70, 0.781);
+    box-shadow: 2px 3px 8px 2px rgba(94, 94, 94, 0.644);
+
 }
+/*FORMAT I-PHONE*/
 @media screen and (max-width: 414px){
   .title-shop { 
     width: 75%;
   }
 }
+
 #shopping-cart { 
     margin: 0 auto; 
     margin-bottom: 4em;
+    padding-bottom: 1em;
     width: 70%;
     color: white; 
     border-radius: 15px; 
-    box-shadow: 8px 6px 10px rgba(70, 70, 70, 0.781);
+    border: 1px solid rgb(22, 22, 22);
+    box-shadow: 2px 3px 8px 2px rgb(70, 70, 70);
+
 }
 
 #product-grid {
-  
     margin: 0 auto;
-    width: 68%;
-   
+    width: 68%
+
 }
 /*FORMAT I-PAD*/
 @media screen and (max-width: 768px) {
@@ -2300,23 +2289,24 @@ body {
 
 #shopping-cart table {
 	  width: 100%;
-    background-color: rgb(88, 50, 50);
+    background-color: rgb(184, 12, 12);
     
 }
 
 #shopping-cart table td {
-    background-color: rgb(230, 230, 230);
+    background-color: rgb(255, 255, 255);
     color: black;
     
 }
 
 .txt-heading {
-	color: #970d0d;
+	color: #c7c7c7;
 	border-bottom: 1px solid rgb(224, 202, 202);
   overflow: auto;
   background-color:#253141;
   border-bottom: none;
-  border-radius: 20px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
   display: flex;
   justify-content:  center;
   font-size: 20px;
@@ -2331,7 +2321,7 @@ body {
 	float: right;
 	text-decoration: none;
 	border-radius: 3px;
-  margin: 10px 0px;
+  margin: 2%;
   box-shadow: 0px 3px 2px rgba(255, 255, 255, 0.185);
 
 }
@@ -2340,7 +2330,25 @@ body {
 #btnEmpty:focus{
   background-color: #10334d;
   color: rgb(189, 22, 22);
-  
+}
+
+#btnBuy {
+	background-color: #16507c;
+	border: 1px solid rgb(196, 55, 4);
+	padding: 5px 10px;
+	color: white;
+	float:  left;
+	text-decoration: none;
+	border-radius: 3px;
+  margin: 2%;
+  box-shadow: 0px 3px 2px rgba(255, 255, 255, 0.185);
+
+}
+
+#btnBuy:hover,
+#btnBuy:focus{
+  background-color: #0b5d9c;
+  color: rgb(219, 14, 14);
 }
 
 .btnAddAction {
@@ -2354,6 +2362,13 @@ body {
     border-radius: 3px;
     cursor: pointer;
     box-shadow: 8px 6px 10px rgba(70, 70, 70, 0.781);
+
+}
+
+.btnAddAction:hover {
+  background-color: black;
+  color:white;
+
 }
 
 #product-grid .txt-heading {
@@ -2366,7 +2381,7 @@ body {
     float: left;  
 	  background: #ffffff;
 	  margin: 35px 35px;
-    border: #E0E0E0 1px solid;
+    border:  1px solid #E0E0E0;
     
 }
 
@@ -2380,7 +2395,6 @@ body {
     justify-content:  center;
     
 }
-
 /*FORMAT I-PAD*/
 @media screen and (max-width: 768px) {
   .product-item {
@@ -2427,32 +2441,36 @@ body {
 
 .product-price {
     float:left;
+    text-align:  justify;
     
 }
+
 /*FORMAT I-PAD*/
 @media screen and (max-width: 768px) {
 .product-price {
     float:none;
     text-align:  center;
     padding-bottom: 5px;
-}   
+  }   
 }
 /*FORMAT I-PHONE*/
 @media screen and (max-width: 414px) {
   .product-price {
     float:none;
     text-align:  center;
-    padding-bottom: 5px;
-}  
+    //padding-bottom: 5px;
+  }  
 }
+
 .product-quantity {
     padding: 5px 10px;
+    margin-left: 8%;
     border-radius: 3px;
-    border: #E0E0E0 1px solid;
+    border: 1px solid #E0E0E0 ;
 
 }
 
-.product-tile-footer {
+.product-title-footer {
     padding: 15px 15px 0px 15px;
     overflow: auto;
     border: 2px solid orangered;
@@ -2465,13 +2483,12 @@ body {
   padding: 15px 0px 0px 0px;
   overflow: auto;
   border: 2px solid orangered;
-  border-top: none;
-  
-}
+  border-top: none; 
+  }
 }
 /*FORMAT I-PHONE*/
 @media screen and (max-width: 414px) {
-  .product-tile-footer {
+  .product-title-footer {
     padding: 5px 0px 0px 0px;
     overflow: auto;
     border: 2px solid orangered;
@@ -2479,6 +2496,7 @@ body {
     
   }
 }
+
 .cart-item-image {
 	  width: 30px;
     height: 30px;
@@ -2491,21 +2509,14 @@ body {
 }
 
 .no-records {
+  position: relative;
 	text-align: center;
-	clear: both;
-    margin: 38px 0px;
+  clear: both;
+  //margin: 38px 0px;
     
 }
 
-/*
-@media (max-width: 1068px) {
-    html { font-size: 0.9em!important; }
-    }
-    
-    @media (max-width: 980px) {
-    html { font-size: 0.8em!important; }
-    }
-*/
+
 
 
 

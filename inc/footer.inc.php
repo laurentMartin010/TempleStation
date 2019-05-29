@@ -3,10 +3,10 @@
 
                         <footer id="footer">
                               <div id="newsletter">
-                                    <form name="newsletter_subscribe" action="post">
-                                    <input class="mail" type="text" name="userEmail" placeholder="Enter your mail here"/>
-                                    <input class="bouton-mail" type="submit" value="Suscribe newsletter">
-                                    </form>
+                                    
+                                    
+                                    <a class="bouton-mail" href="registration/register.php">Suscribe newsletter</a>
+                                    
                               </div>
 
 
@@ -24,12 +24,13 @@
       </div>
 </div>
       <!-- Compiled and minified JavaScript -->
+     
      <!-- all your great html... -->
       <script src="flickity/flickity.pkgd.min.js"></script>
 
       <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-      
+
       <script type="text/javascript" src="js/index.js"></script>
       <script type="text/javascript" src="jquery.js"></script>
       <script type="text/javascript" src="jquery-ui.min.js"></script>

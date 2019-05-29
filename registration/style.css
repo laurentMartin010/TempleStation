@@ -1,0 +1,321 @@
+
+* {
+  margin: 0px;
+  padding: 0px;
+
+}
+
+body {
+  font-size: 120%;
+  background: rgb(0, 0, 0);
+
+}
+
+.header {
+  width: 30%;
+  margin: 50px auto 0px;
+  color: white;
+  font-family: Roboto, Arial;
+  background-color: rgb(42, 169, 173);
+  text-align: center;
+  border: 2px solid rgb(0, 0, 0);
+  border-bottom: none;
+  border-radius: 10px 10px 0px 0px;
+  padding: 20px;
+
+}
+
+
+form, .content {
+  width: 30%;
+  margin: 0px auto;
+  padding: 20px;
+  border: 2px solid black;
+  background: white;
+  border-radius: 0px 0px 10px 10px;
+
+}
+
+.input-group {
+  margin: 10px 0px 10px 0px;
+
+}
+
+.input-group label {
+  display: block;
+  text-align: left;
+  margin: 3px;
+
+}
+
+.input-group input {
+  height: 30px;
+  width: 93%;
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid gray;
+
+}
+
+.btn {
+  padding: 10px;
+  font-size: 15px;
+  color: white;
+  background: rgb(5, 45, 155);
+  border: 2px solid orangered;
+  border-radius: 5px;
+
+}
+
+.btn:hover {
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+    background: rgb(25, 83, 240);
+    border: 2px solid orangered;
+    border-radius: 5px;
+
+}
+
+.sign {
+  text-decoration:  inherit;
+
+}
+
+.sign:hover {
+  color: orangered;
+
+}
+
+.error {
+  width: 92%; 
+  margin: 0px auto; 
+  padding: 10px; 
+  border: 1px solid #a94442; 
+  color: #a94442; 
+  background: #f2dede; 
+  border-radius: 5px; 
+  text-align: left;
+
+}
+
+.success {
+  color: #3c763d; 
+  background: #dff0d8; 
+  border: 1px solid #3c763d;
+  margin-bottom: 20px; 
+
+}
+
+/*REGISTER*/
+
+@font-face {
+  font-family: 'josephin';
+  src: url('../registration/fonts/josephin/josephin-webfont.eot?');
+  src: url('../registration/fonts/josephin/josephin-webfont.otf') format('truetype'),       
+       url('../registration/fonts/josephin/josephin-webfont.woff') format('woff'),
+       url('../registration/fonts/josephin/josephin-webfont.woff2') format('woff2'),
+       url('../registration/fonts/josephin/josephin-webfont.svg#josephin') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+#TSback{
+  font-family: josephin, Arial, sans-serif;
+  padding-top: 1%;
+  margin-bottom: 6%;
+  color: #ffffff; 
+  font-size: 4em;
+  display:  block;
+  text-align:  center;
+  animation-duration: 2s;
+  
+}
+
+/*ANIMATION SUR TEMPLE STATION dans REGISTER.PHP */
+@-webkit-keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.zoomIn {
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
+}
+
+/*ANIMATION SUR TEMPLE STATION dans LOGIN.PHP */
+
+@-webkit-keyframes lightSpeedIn {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
+    transform: translate3d(100%, 0, 0) skewX(-30deg);
+    opacity: 0;
+  }
+
+  60% {
+    -webkit-transform: skewX(20deg);
+    transform: skewX(20deg);
+    opacity: 1;
+  }
+
+  80% {
+    -webkit-transform: skewX(-5deg);
+    transform: skewX(-5deg);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes lightSpeedIn {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
+    transform: translate3d(100%, 0, 0) skewX(-30deg);
+    opacity: 0;
+  }
+
+  60% {
+    -webkit-transform: skewX(20deg);
+    transform: skewX(20deg);
+    opacity: 1;
+  }
+
+  80% {
+    -webkit-transform: skewX(-5deg);
+    transform: skewX(-5deg);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.lightSpeedIn {
+  -webkit-animation-name: lightSpeedIn;
+  animation-name: lightSpeedIn;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+}
+
+
+/*ANIMATION SUR TEMPLE STATION dans INDEX2.PHP */
+
+@-webkit-keyframes rubberBand {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
+  }
+
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes rubberBand {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
+  }
+
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.rubberBand {
+  -webkit-animation-name: rubberBand;
+  animation-name: rubberBand;
+}
+
+
+.back-register img{
+  z-index:-1;
+  position: fixed;
+  width:100%;
+  height: 100%;
+
+}
+
+.back-login img{
+  z-index:-1;
+  position: fixed;
+  width:100%;
+  height: 200%;
+}

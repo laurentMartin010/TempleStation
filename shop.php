@@ -59,10 +59,12 @@
 			<h1 style="text-align: center;">Welcome to your <span style="font-family: josephin; color: orangered; ">TEMPLE SHOP  !</span></h1>
 		</div>
 	</div>
-	<!--List Cart Items from the PHP Session-->
+	<!--Liste des articles de la session PHP-->
 		<div id="shopping-cart">
 			<div class="txt-heading">Shopping Cart</div>
 
+
+				<!--Bouton EMPTY-->	
 				<a id="btnEmpty" href="shop.php?action=empty">Empty Cart</a>
 
 					<?php
@@ -70,7 +72,7 @@
     						$total_quantity = 0;
     						$total_price = 0;
 					?>
-
+				
 			<table class="tbl-cart" cellpadding="10" cellspacing="1">
 				<tbody>
 					<tr>
@@ -106,6 +108,10 @@
 						<td align="right" colspan="2"><strong><?php echo "$ ".number_format($total_price, 2); ?></strong></td>
 						<td></td>
 					</tr>
+
+					<!--Bouton BUY-->
+					<a id="btnBuy" href="">Buy Now !</a>
+
 				</tbody>
 			</table>
 
@@ -118,7 +124,7 @@
 						<?php 
 						}
 						?>
-
+			
 		</div>
 
 	<div id="product-grid">
@@ -133,7 +139,7 @@
 			<div class="product-item">
 				<form method="post" action="shop.php?action=add&code=<?php echo $product_array[$key]["code"]; ?>">
 					<div class="product-image"><img src="<?php echo $product_array[$key]["image"]; ?>"></div>
-					<div class="product-tile-footer">
+					<div class="product-title-footer">
 						<div class="product-title"><?php echo $product_array[$key]["name"]; ?></div>
 						<div class="product-price"><?php echo "€".$product_array[$key]["price"]; ?></div>
 						<div class="cart-action"><input type="text" class="product-quantity" name="quantity" value="1" size="2" /><input type="submit" value="Add to Cart" class="btnAddAction" /></div>

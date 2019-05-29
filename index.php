@@ -82,27 +82,7 @@
       
 	
 
-<!--
-		<script>
-		$(document).ready(function(){
-})
-		$("img").hover(function()
-		{$(this).stop().animate({"opacity": 0.2});}
-		, function(){$(this).stop().animate({"opacity": 1});				
-});
-  
-
-
-
-     autre facon de faire
-            $('ul.hover_block li').hover(function() {
-                $(this).find('img').animate({opacity:"0.2"}, {queue:false,duration:300});
-            }, function(){
-                $(this).find('img').animate({opacity:"1"}, {queue:false,duration:300});
-            });
-		
-		</script>
-  -->              
+             
 
                 <!--  <div class="background-image">
                         <img image="img/rueplushaut.JPG" size="full" class="ng-isolate-scope" 
@@ -110,7 +90,7 @@
                   </div>-->
 
       <!--
-      <div class="site-cache"></div>-->
+      <div class="site-cache" id="site-cache"></div>-->
 
       <!--<div class="background-image2">
    <img image="montagephoto.png" size="full" class="ng-isolate-scope" 
