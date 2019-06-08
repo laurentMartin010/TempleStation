@@ -50,13 +50,7 @@ a {
 
 }
 
-/*
-#selectable a{ width: 200px; }
-#selectable .ui-selecting { background: #FECA40; }
-#selectable .ui-selected { background: #F39814; color: white; }
-#selectable { list-style-type: none; margin: 0; padding: 0; width: 60%; }
-#selectable a{ margin: 3px; padding: 0.4em; font-size: 1.4em; height: 18px; }
-*/
+
 /*
 a{
     text-decoration:  none; 
@@ -222,6 +216,8 @@ button:hover::before {
 }
 */
 
+
+
 // ==========================================================================
 //                  MENU
 // ==========================================================================
@@ -248,7 +244,9 @@ button:hover::before {
     :target {
         color: orangered;
     }
+    
 }
+
 
 
 // ==========================================================================
@@ -1964,7 +1962,7 @@ ul#hover_block li img {
   position: relative; 
   width: 100%;
   height: auto;
-  border: 2px solid blue;
+  border-top: 2px solid rgb(255, 255, 255);
   padding-bottom: 13.5%;
 }
 
@@ -2010,7 +2008,6 @@ ul#hover_block li img {
     position: relative; 
     width: 100%;
     height: auto;
-    border: 2px solid blue;
     padding-bottom: 63%;
   }
   .titre-carousel1 {
@@ -2043,7 +2040,7 @@ ul#hover_block li img {
   padding-top: 2%;
   padding-bottom: 3%;
   margin-top: 2%;
-  border: 2px solid blue;
+  border-bottom: 2px solid rgb(255, 255, 255);
   padding-bottom: 8.2%;
 }
 
@@ -2083,7 +2080,6 @@ ul#hover_block li img {
     position: relative; 
     width: 100%;
     height: auto;
-    border: 2px solid blue;
     
   }
   .titre-carousel2 {
@@ -2515,7 +2511,6 @@ body {
   //margin: 38px 0px;
     
 }
-
 
 
 

@@ -28,12 +28,12 @@
   		<?php include('errors.php'); ?>
   		
 				<div class="input-group">
-  	  		<label>Username</label>
+  	  		<label>Create your Username</label>
   	  		<input type="text" name="username" value="<?php echo $username; ?>">
   			</div>
 
   			<div class="input-group">
-  	  		<label>Email</label>
+  	  		<label>Enter your Email</label>
   	  		<input type="email" name="email" value="<?php echo $email; ?>">
   			</div>
 

@@ -1,4 +1,5 @@
 <?php 
+//Sessions utilisées pour suivre les utilisateurs connectés, on inclue donc session_start
   session_start(); 
 
   if (!isset($_SESSION['username'])) {
@@ -33,17 +34,18 @@
   		<?php if (isset($_SESSION['success'])) : ?>
       	<div class="error success" >
       		<h3>
-          	<?php 
-          		echo $_SESSION['success']; 
+			<!--Sécurité: avec filter_input-->
+			<?php 
+          		echo ($_SESSION['success']); 
           		unset($_SESSION['success']);
           	?>
       		</h3>
       	</div>
   		<?php endif ?>
 
-    	<!-- logged in user information -->
-    	<?php  if (isset($_SESSION['username'])) : ?>
-			<p>Welcome <strong><?php echo $_SESSION['username']; ?></strong> !</p><br>
+    	<!-- Information du user connecté -->
+		<?php  if (isset($_SESSION['username'])) : ?>
+			<p>Welcome <strong><?php echo ($_SESSION['username']); ?></strong> !</p><br>
 			<p><a class="sign" href="register.php">Back to Register</a></p><br>
 			<p><a class="sign" href="../index.php?logout='1'">Back to site</a> </p><br>
 			

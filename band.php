@@ -28,7 +28,7 @@
             <!--FLECHE SCROLL-->
                  
             <section id="section04" class="demo" style="margin-top: 5px;">                 
-                        <a href="#scrollBand" style="color:grey;"><span></span>Scroll</a>
+                        <a href="#scrollBand" style="color: black;"><span></span>Scroll</a>
                     </section>    
 
 
