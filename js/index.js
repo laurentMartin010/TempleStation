@@ -20,7 +20,7 @@ $('#site-cache').click(function(e){
 
 
 // ==========================================================================
-//          FLECHE SCROLL
+//          FLÈCHE SCROLL
 // ==========================================================================
 
 $(function() {
@@ -37,9 +37,9 @@ $(function() {
 // ==========================================================================
 
 
-let blink_speed = 400;
-let t = setInterval(function () { let ele = document.getElementById('blinker'); 
-ele.style.visibility = (ele.style.visibility == 'hidden' ? '' : 'hidden'); },
+let blink_speed = 500;
+let t = setInterval(function () { let e = document.getElementById('blinker'); 
+e.style.visibility = (e.style.visibility == 'hidden' ? '' : 'hidden'); },
 blink_speed);
 
 
@@ -139,7 +139,7 @@ anime.timeline({loop: false})
 
 
 // ==========================================================================
-// CAROUSEL page PHOTOS.PHP
+// CAROUSEL page PHOTOS.PHP (code intégré au dossier téléchargé)
 // ==========================================================================
 
  var flkty = new Flickity( '.carousel js-flickity', {

@@ -9,7 +9,7 @@
 
 	<!--IMAGE Background-->
 	<div class="back-login">
-    <img src="../img/TrainTScouleur.JPG" alt="train couleur"/>
+    <img src="../img/trainTScouleur.JPG" alt=""/>
   </div>
 
 	<!--Titre TEMPLE STATION-->

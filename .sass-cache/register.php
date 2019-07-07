@@ -10,7 +10,7 @@
 
 	<!--Image Background-->
 	<div class="back-register">
-      <img src="../img/TsCartes2.JPG" alt="cartes de visite temple station"/>
+      <img src="../img/TsCartes2.JPG" alt=""/>
   </div>
 
 	<!--Titre TEMPLE STATION-->
@@ -48,7 +48,6 @@
   			</div>
 
   			<div class="input-group">
-			  <!--le name="reg_user" est référé dans le if de server.php-->
   				<button type="submit" class="btn" name="reg_user">Register</button>
   			</div>
 

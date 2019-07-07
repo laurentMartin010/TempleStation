@@ -61,6 +61,7 @@ a{
 
 @include font-face(josephin, fonts/josephin, bold, italic);
 */
+
 @font-face {
   font-family: 'josephin';
   src: url('../fonts/josephin/josephin-webfont.eot?');
@@ -302,7 +303,7 @@ $menu-width:250px!default;
             height: 0;
             top: 16px;
             left: 16px;          
-            /*création des barres du burger*/
+            /*création des barres du burger grâce à la mixin box-shadow*/
             @include box-shadow(0 10px 0 1px #FFF, 0 16px 0 1px #FFF, 0 22px 0 1px #FFF);   
         }
     }
@@ -313,18 +314,19 @@ $menu-width:250px!default;
         top: 0;
         bottom: 0;
         /* variable créée au debut de la page */
-        background-color: lighten($header-bg, 3);
+        background-color: lighten($header-bg, 2);
 
         /* variable créée au début de ce bloc*/
         width: $menu-width;
-
+        /*utilisation des mixins*/
         @include transform(translate($menu-width * -1));
         @include transition-duration(0.3s);
             a {
             display: block;
             height: 20px;
             text-align:  center;
-            line-height: 20px;    
+            line-height: 5px;   
+            //border-bottom: 1px solid rgb(34, 34, 34); 
             }
         
     }
@@ -405,6 +407,12 @@ video {
     margin-left: -1em;      
   }
 }
+/*FORMAT Intermediaire 1*/
+@media screen and (max-width: 970px) {
+  .textOnVideo p {
+    font-size: 5rem;
+  }
+}
 /*FORMAT I-PAD*/
 @media screen and (max-width: 768px) {
   .textOnVideo {
@@ -416,6 +424,12 @@ video {
     font-size: 4.5rem;
     margin-left: -1.2em;      
   }
+}
+/*FORMAT Intermediaire 2*/
+@media screen and (max-width: 672px) {
+  .textOnVideo p {
+    font-size: 2.9rem; 
+}
 }
 /*FORMAT I-PHONE*/
 @media screen and (max-width: 414px) {
@@ -429,7 +443,7 @@ video {
   }
 }
 
-/*EFFET SUR NEW EP GIRL*/
+/*EFFET SUR NEW EP GIRL avec Flickity*/
 
 @-webkit-keyframes fadeInDownBig {
     from {
@@ -466,7 +480,7 @@ video {
 }
 
 
-/*   TEXT 2 (NOW AVAILABLE)  */
+/*   TEXT 2 (NOW AVAILABLE) avec Flickity */
 
 .textOnVideo2 {
     z-index:3;
@@ -498,6 +512,12 @@ video {
     font-size: 6rem;     
 }
 }
+/*FORMAT Intermediaire 1*/
+@media screen and (max-width: 970px) {
+  .textOnVideo2 p {
+    font-size: 4.5rem;
+  }
+}
 /*FORMAT I-PAD*/
 @media screen and (max-width: 768px) {
   .textOnVideo2 {
@@ -505,6 +525,12 @@ video {
 }
   .textOnVideo2 p {
     font-size: 3.8rem;     
+}
+}
+/*FORMAT Intermediaire 2*/
+@media screen and (max-width: 672px) {
+  .textOnVideo2 p {
+    font-size: 2.6rem; 
 }
 }
 /*FORMAT I-PHONE*/
@@ -520,7 +546,7 @@ video {
   }
 }
 
-/*EFFET 1 SUR NOW AVAILABLE*/
+/*EFFET 1 SUR NOW AVAILABLE avec Flickity*/
 
 @-webkit-keyframes fadeInUpBig {
     from {
@@ -557,7 +583,7 @@ video {
   }
 
 
-/*EFFET 2 SUR NOW AVAILABLE*/
+/*EFFET 2 SUR NOW AVAILABLE avec Flickity*/
 
 @-webkit-keyframes flash {
     from,
@@ -700,10 +726,11 @@ video {
     left: 50%;
     width: 100%;
     height: 2px;
-    background-color: #ffffff;
+    background-color: orangered;
     transform-origin: center;
     transform: translateX(-50%) scaleX(0);
     transition: transform 0.5s ease;
+    
 
 }
       
@@ -723,7 +750,7 @@ video {
 }
   
 
-      /* FLECHE SCROLL*/
+      /* FLÈCHE SCROLL*/
 
 @import url(https://fonts.googleapis.com/css?family=Josefin+Sans:300,400);
 
@@ -930,7 +957,7 @@ fieldset {
     z-index: 2;
     width: 100%;
     height: 30em;
-    opacity: 0.5; 
+    //opacity: 0.5; 
     
 }
 
@@ -996,7 +1023,7 @@ fieldset {
     z-index: 2;
     width: 100%;
     height: 23.2em;
-    opacity: 0.5;  
+    //opacity: 0.5;  
     
 }
 .bloc2 img {
@@ -1030,7 +1057,7 @@ fieldset {
     z-index: 2; 
     width: 100%;
     height: 23.2em;
-    opacity: 0.5;
+    //opacity: 0.5;
 
 }
 .bloc3 img {
@@ -1125,7 +1152,7 @@ fieldset {
   }
 }
 // ==========================================================================
-//                  FOOTER
+//                  FOOTER.PHP
 // ==========================================================================
 
 #footer {
@@ -1137,6 +1164,59 @@ fieldset {
     background-color: rgb(17, 16, 16);
     clear: both;
 
+}
+
+
+/*  NEWSLETTER  */
+
+/*
+#newsletter{
+  visibility: hidden;
+}*/
+
+.bouton-mail { 
+  float:  left;
+  text-align:  center;
+  width: 30%;
+  line-height: 25px;
+  color: white;
+  margin-left: 3%;
+  font-size: 18px;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.829);
+  border: 1px solid orangered;
+  
+}
+
+.bouton-mail:hover {
+  background-color: #c70404;
+  cursor: pointer;
+
+}
+
+/*FORMAT I-PAD*/
+@media screen and (max-width: 768px) {
+/*.mail {
+  width: 58%; 
+}*/
+.bouton-mail {
+width: 40%;
+}
+}
+/*FORMAT I-PHONE*/
+@media screen and (max-width: 414px) {
+#newsletter {
+  margin-left: 0.5em;
+  width: 50%;
+}
+.mail {
+  width: 38%; 
+}
+.bouton-mail {
+width: 70%;
+font-size: 12px;
+height: auto;
+}
 }
 
 /* RESEAUX SOCIAUX */
@@ -1177,68 +1257,29 @@ fieldset {
     margin-left: 1em;
 }
 }
-
+@media screen and (max-width: 320px) {
+  #footer .footer-section {  
+    margin-right: 1em;  
+}
+}
 #footer .footer-section a:hover{
   opacity: 1;
 
 }
 
-/*  NEWSLETTER  */
-
-.bouton-mail {
-    float:  left;
-    text-align:  center;
-    width: 10%;
-    line-height: 25px;
-    color: white;
-    height: 1.6em;
-    margin-left: 3%;
-    background-color: rgba(0, 0, 0, 0.829);
-    border: 1px solid orangered;
-
-}
-
-.bouton-mail:hover {
-    background-color: #c70404;
-    cursor: pointer;
-
-}
-/*FORMAT I-PAD*/
-@media screen and (max-width: 768px) {
-  .mail {
-    width: 58%; 
-}
-.bouton-mail {
-  width: 40%;
-}
-}
-/*FORMAT I-PHONE*/
-@media screen and (max-width: 414px) {
-  #newsletter {
-    margin-left: 0.5em;
-    width: 70%;
-}
-  .mail {
-    width: 38%; 
-}
-.bouton-mail {
-  width: 25%;
-  font-size: 7px;
-  height: 3.5em;
-  }
-}
 
 // ==========================================================================
 //                -- BAND.PHP --
 // ==========================================================================
 
-#page-band {
+#page-bar{
     margin:0;
     max-width: 100%;
     height: 90%;
     border: 2px solid rgba(255, 255, 255, 0.808);
 
 }
+
 
 @-webkit-keyframes swing {
     20% {
@@ -1380,7 +1421,7 @@ ul#hover_block li a {
   }
 }
 
-.p-Jé {
+.p-Je {
     width: 98%;
     height:  auto;
     color: rgb(255, 255, 255);
@@ -1399,7 +1440,7 @@ ul#hover_block li a {
 }
 /*FORMAT I-PHONE + */
 @media screen and (max-width: 414px) {
-  .p-Jé {
+  .p-Je {
     font-size: 12px;
   }
   .p-Lo {
@@ -1453,6 +1494,16 @@ ul#hover_block li img {
     height: 11.5em;
   }
 }
+/*Format intermediaire*/
+@media screen and (max-width: 1232px) {
+  .div-text1 {
+    height: 13.8em;
+  }
+  .div-text2 {
+    height: 13.8em;
+  }
+}
+
 /*FORMAT I-PAD position horizontale*/
 @media screen and (max-width: 1024px) {
   ul#hover_block li {
@@ -1465,21 +1516,22 @@ ul#hover_block li img {
   }
   .div-text1 {
     //margin-top: 3em;
-    height: 14em;
+    height: 18em;
   }
   .div-text2 {
     margin-top: 2em;
-    height: 13em;
+    height: 18em;
   }
 }
+
 /*FORMAT I-PAD*/
 @media screen and (max-width: 768px) {
   .div-text1 {
     margin-top: 3em;
-    height: 18em;
+    height: 24em;
   }
   .div-text2 {
-    height: 17em;
+    height: 22em;
   }
 }
 /*FORMAT I-PHONE + */
@@ -1492,13 +1544,23 @@ ul#hover_block li img {
     height: 24em;
   }
 }
-/*FORMAT Galaxy S9... */
-@media screen and (max-width: 360px) {
+/*FORMAT iphone X/XS... */
+
+@media screen and (max-width: 377px) {
   .div-text1 {
     height: 27em;
   }
   .div-text2 {
     height: 26em;
+  }
+}
+/*FORMAT Iphone5... */
+@media screen and (max-width: 320px) {
+  .div-text1 {
+    height: 29.5em;
+  }
+  .div-text2 {
+    height: 28em;
   }
 }
 
@@ -1534,6 +1596,15 @@ ul#hover_block li img {
     font-size:14px;
   }
 }
+@media screen and (max-width: 642px) {
+  .text-p1 {
+    font-size:12px;
+  }
+  .text-p2 {
+    font-size:12px;
+  }
+}
+
 /*FORMAT I-PHONE*/
 @media screen and (max-width: 414px) {
   .text-p1 {
@@ -1543,6 +1614,16 @@ ul#hover_block li img {
     font-size:12px;
   }
 }
+/*Format en dessous*/
+@media screen and (max-width: 364px) {
+  .text-p1 {
+    font-size:10px;
+  }
+  .text-p2 {
+    font-size:10px;
+  }
+}
+
 .div-signature {
     position:  relative;
     width: 100%;
@@ -1578,7 +1659,8 @@ ul#hover_block li img {
     width: 30%;
     margin-top: 2%;
   }
-}             
+}     
+
 // ==========================================================================
 //              -- VIDEOS.PHP --
 // ==========================================================================
@@ -2264,9 +2346,11 @@ body {
 }
 
 #product-grid {
+    position: relative;
     margin: 0 auto;
-    width: 68%
-
+    width: 68%;
+    height: auto;
+      
 }
 /*FORMAT I-PAD*/
 @media screen and (max-width: 768px) {
@@ -2400,8 +2484,14 @@ body {
     width: 100%;
   }
 }
+/*FORMAT Intermediaire*/
+@media screen and (max-width:736px){
+  .product-item {
+    width: 35%;
+  }
+}
 /*FORMAT I-PHONE*/
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 486px) {
   .product-item {
     width: 75%;
   }
@@ -2409,7 +2499,12 @@ body {
     width: 100%;
   }
 }
-
+/*FORMAT Intermediaire*/
+@media screen and (max-width:320px){
+  .product-item {
+    width: 85%;
+  }
+}
 .demo-input-box {
 	border-radius: 2px;
 	border: #CCC 1px solid;
@@ -2455,7 +2550,7 @@ body {
     float:none;
     text-align:  center;
     //padding-bottom: 5px;
-  }  
+  } 
 }
 
 .product-quantity {
@@ -2463,8 +2558,11 @@ body {
     margin-left: 8%;
     border-radius: 3px;
     border: 1px solid #E0E0E0 ;
-
+    width: 50px;
 }
+
+
+
 
 .product-title-footer {
     padding: 15px 15px 0px 15px;
@@ -2475,7 +2573,7 @@ body {
 }
 /*FORMAT I-PAD*/
 @media screen and (max-width: 768px) {
-.product-tile-footer {
+.product-title-footer {
   padding: 15px 0px 0px 0px;
   overflow: auto;
   border: 2px solid orangered;

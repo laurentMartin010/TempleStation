@@ -1,5 +1,4 @@
 <?php
-//Sessions utilisées pour suivre les utilisateurs connectés, on inclue donc session_start
 session_start();
 
 // Initialisation des variables

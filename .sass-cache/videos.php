@@ -27,7 +27,7 @@
                 <!--VIDEO CLIP-->
 
                 <div id="div-videoClip" class="animated bounce delay-2s">  
-                    <iframe class="videoClip" src="videos/vidClipTS.mp4" type="video/mp4"  frameborder="0"   allowfullscreen>Sorry, your browser doesn't support embedded videos.</iframe>
+                    <iframe class="videoClip" src="videos/vidClipTS.mp4" type="video/mp4" frameborder="0" autostart="false"  allowfullscreen="allowfullscreen"></iframe>
                 </div> 
                  
         </div>   
@@ -48,8 +48,8 @@
             </div>
 
            
-                <iframe class="teaser" src="videos/TRWTeaser1.ogv" type="video/ogg" frameborder="0"  allowfullscreen>Sorry, your browser doesn't support embedded videos.</iframe>
-                
+                <iframe class="teaser" src="videos/TRWTeaser1.mov" type="video/mov" frameborder="0" autostart="false" allowfullscreen="allowfullscreen"></iframe>
+           
 
             <div id="essaiVid" class="div-TextApresTeaser">
                 <h2 class="h2Band">End of the line ! Everybody out !</h2>

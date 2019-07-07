@@ -2,17 +2,22 @@
 <html>
       <head>
             <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+            
             <!--Pour ne pas que sur mobile le périphérique dézoom / device-width = prendra la largeur de l'écran / initial-scale = zoom initial / maximum-scale= empeche l'utilisateur de zoomer-->
             <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
             <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
             <link rel="stylesheet"  type="text/css" href="css/styles.css" media="screen"/> 
+            
+            <!--Flickity.css-->
+            <link rel="stylesheet" href="flickity/flickity.css" media="screen">
+
+            <!--Animate.css-->
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">  
+            
             <link rel="stylesheet" href="jquery-ui.min.css" />
            
-            <!-- other head stuff... -->
-
-		<link rel="stylesheet" href="flickity/flickity.css" media="screen">
+		
                         <title>Temple Station</title>
       </head>
       <body>

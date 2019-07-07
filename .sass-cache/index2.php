@@ -20,7 +20,9 @@
 </head>
 <body id="body-index2">
 
-	<!--Titre TEMPLE STATION-->	
+
+	<!--Titre TEMPLE STATION-->
+	
 	<div>
 	  <p id="TSback" class="animated rubberBand">TEMPLE STATION</p>
 	</div>
@@ -48,6 +50,7 @@
 			<p><a class="sign" href="../index.php?logout='1'">Back to site</a> </p><br>
 			
     	<?php endif ?>
-	</div>		
+	</div>
+		
 </body>
 </html>

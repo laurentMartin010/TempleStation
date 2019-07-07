@@ -1,8 +1,7 @@
-
--- Table des produits de la base de données pour le panier
+--Database Product Table for Shopping Cart
 
 --
--- Structure de la table pour la table `tblproduct`
+-- Table structure for table `tblproduct`
 --
 
 CREATE TABLE `TSproducts` (
@@ -14,7 +13,7 @@ CREATE TABLE `TSproducts` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Données de dumping pour la table `tblproduct`
+-- Dumping data for table `tblproduct`
 --
 
 INSERT INTO `TSproducts` (`id`, `name`, `code`, `image`, `price`) VALUES
@@ -32,18 +31,18 @@ INSERT INTO `TSproducts` (`id`, `name`, `code`, `image`, `price`) VALUES
 
 
 --
--- Indexes pour la  table `tblproduct`
+-- Indexes for table `tblproduct`
 --
 ALTER TABLE `TSproducts`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `product_code` (`code`);
 
 --
--- AUTO_INCREMENT pour les tables vidées
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT pour la  table `tblproduct`
+-- AUTO_INCREMENT for table `tblproduct`
 --
 ALTER TABLE `TSproducts`
   MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;

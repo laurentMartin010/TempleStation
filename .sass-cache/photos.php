@@ -16,22 +16,22 @@
         <div class="carousel js-flickity">
    
             <div class="carousel-cell">
-                <img src="img/feteMusique/chezNous2.jpg" alt="Temple station fete de la musique 1" />
+                <img src="img/feteMusique/chezNous2.jpg" alt="" />
             </div>
             <div class="carousel-cell">
-                <img src="img/feteMusique/chezNous1.jpg" alt="Temple station fete de la musique 2 " />
+                <img src="img/feteMusique/chezNous1.jpg" alt="" />
             </div>
             <div class="carousel-cell">
-                <img src="img/feteMusique/chezNouspublic.jpg" alt="Temple station fete de la musique 3" />
+                <img src="img/feteMusique/chezNouspublic.jpg" alt="" />
             </div>
             <div class="carousel-cell">
-                <img src="img/feteMusique/chezNous5.jpg" alt="Temple station fete de la musique 4" />
+                <img src="img/feteMusique/chezNous5.jpg" alt="" />
             </div>
             <div class="carousel-cell">
-                <img src="img/feteMusique/chezNous3.jpg" alt="Temple station fete de la musique 5" />
+                <img src="img/feteMusique/chezNous3.jpg" alt="" />
             </div>
             <div class="carousel-cell">
-                <img src="img/feteMusique/chezNous4.jpg" alt="Temple station fete de la musique 6" />
+                <img src="img/feteMusique/chezNous4.jpg" alt="" />
             </div>
             
         </div>
@@ -59,37 +59,37 @@
         <div class="carousel js-flickity">
    
         <div class="carousel-cell">
-            <img src="img/photosAs/photoAs1.jpg" alt="Temple station Asnieres 1" />
+            <img src="img/photosAs/photoAs1.jpg" alt="" />
         </div>
         <div class="carousel-cell">
-            <img src="img/photosAs/JeParvis.jpg" alt="Temple station Asnieres 2" />
+            <img src="img/photosAs/JéParvis.jpg" alt="" />
         </div>
         <div class="carousel-cell" >
-            <img src="img/photosAs/LoParvis.jpg" alt="Temple station Asnieres 3" />
+            <img src="img/photosAs/LoParvis.jpg" alt="" />
         </div>
         <div class="carousel-cell">
-            <img src="img/photosAs/photoAs2.jpg" alt="Temple station Asnieres 4" />
+            <img src="img/photosAs/photoAs2.jpg" alt="" />
         </div>
         <div class="carousel-cell">
-            <img src="img/photosAs/photoAs3.jpg" alt="Temple station Asnieres 5" />
+            <img src="img/photosAs/photoAs3.jpg" alt="" />
         </div>
         <div class="carousel-cell">
-            <img src="img/photosAs/photoAs4.jpg" alt="Temple station Asnieres 6" />
+            <img src="img/photosAs/photoAs4.jpg" alt="" />
         </div>
         <div class="carousel-cell">
-            <img src="img/photosAs/photoAs5.jpg" alt="Temple station Asnieres 7" />
+            <img src="img/photosAs/photoAs5.jpg" alt="" />
         </div>
         <div class="carousel-cell">
-            <img src="img/photosAs/photoAs6.jpg" alt="Temple station Asnieres 8" />
+            <img src="img/photosAs/photoAs6.jpg" alt="" />
         </div>
         <div class="carousel-cell">
-            <img src="img/photosAs/photoAs7.jpg" alt="Temple station Asnieres 9" />
+            <img src="img/photosAs/photoAs7.jpg" alt="" />
         </div>
         <div class="carousel-cell">
-            <img src="img/photosAs/photoAs8.jpg" alt="Temple station Asnieres 10" />
+            <img src="img/photosAs/photoAs8.jpg" alt="" />
         </div>
         <div class="carousel-cell">
-            <img src="img/photosAs/photoAs9.jpg" alt="Temple station Asnieres 11" />
+            <img src="img/photosAs/photoAs9.jpg" alt="" />
         </div>
    
     </div>

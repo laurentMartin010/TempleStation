@@ -1,0 +1,3 @@
+Sitemap: http://www.templestationband.com/sitemap.xml
+User-agent:*
+Disallow:
